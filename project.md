@@ -39,6 +39,7 @@
     - 旗標值（flags）：2
 - FIN（Finish）：本回合連線傳送完成
     - 旗標值（flags）：1
+
 ![](https://github.com/ChiaYuSu/linux108b/blob/master/project/TCP%20flags.jpg)
 
 ### Client 端
