@@ -62,9 +62,7 @@
     4. A 主機 <- **建立連線** -> B 主機
 
 ### 不同模式的端口掃描之回應結果
-- 架構示意圖 
-    <br>
-    <img src="project\nmap_presentation_16.jpg" width="550px" />
+<img src="project\nmap_presentation_16.jpg" width="550px" />
 
 - Stealth Scan：隱密掃描（又稱秘密掃描），可規避 **IDS（入侵檢測系統 Intrusion-detection system）**
 
