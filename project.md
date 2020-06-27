@@ -55,15 +55,33 @@
 ![](https://github.com/ChiaYuSu/linux108b/blob/master/project/nmap_presentation_15.jpg)
 
 - 步驟（B 主機端口有開啟）
-    1. A 主機 ->**（SYN）**-> B 主機
-    2. B 主機 ->**（SYN + ACK）**-> A 主機
-    3. A 主機 ->**（ACK）**-> B 主機
-    4. A 主機 <-**（建立連線）**-> B 主機
+    1. A 主機 -> **SYN** -> B 主機
+    2. B 主機 -> **SYN + ACK** -> A 主機
+    3. A 主機 -> **ACK** -> B 主機
+    4. A 主機 <- **建立連線** -> B 主機
 
 ### 不同模式的端口掃描之回應結果
 ![](https://github.com/ChiaYuSu/linux108b/blob/master/project/nmap_presentation_16.jpg)
 
-- Stealth Scan：隱密掃描（秘密掃描），可規避 **IDS（入侵檢測系統 Intrusion-detection system）**
+- Stealth Scan：隱密掃描（又稱秘密掃描），可規避 **IDS（入侵檢測系統 Intrusion-detection system）**
+
+## 如何預防攻擊（Prevent DDoS attack）
+### TCP RST scan
+![](https://github.com/ChiaYuSu/linux108b/blob/master/project/nmap_presentation_18.jpg)
+
+- 步驟（B 主機端口有開啟）
+    1. A 主機 -> **SYN** -> B 主機
+    2. B 主機 -> **SYN + ACK** -> A 主機
+    3. A 主機 -> **RST** -> B 主機
+- 規則檔（controller.py）
+    ```python
+    # anti SYN port scan 
+    if (val1-val2>=3) and (TCP in pkt) and pkt[TCP].flags==2:   
+      src = pkt.sprintf('{IP:%IP.src%}')   
+      if src not in blockip:   
+      self.controllers["s1"].table_add("block_pkt", "_drop", [str(src)], [])   
+      blockip.append(src)
+    ```
 
 ## 簡報參考
 - [Nmap 網路安全工具 / 網路分析模擬期末報告]()
