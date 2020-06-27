@@ -63,6 +63,8 @@
 ### 不同模式的端口掃描之回應結果
 ![](https://github.com/ChiaYuSu/linux108b/blob/master/project/nmap_presentation_16.jpg)
 
+- Stealth Scan：隱密掃描（秘密掃描），可規避 IDS（入侵檢測系統 Intrusion-detection system）
+
 ## 簡報參考
 - [Nmap 網路安全工具 / 網路分析模擬期末報告]()
 
