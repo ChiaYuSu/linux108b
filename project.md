@@ -61,13 +61,13 @@
     4. A 主機 <- **建立連線** -> B 主機
 
 ### 不同模式的端口掃描之回應結果
-![](https://github.com/ChiaYuSu/linux108b/blob/master/project/nmap_presentation_16.jpg)
+<img src="project\nmap_presentation_16.jpg" width="550px" />
 
 - Stealth Scan：隱密掃描（又稱秘密掃描），可規避 **IDS（入侵檢測系統 Intrusion-detection system）**
 
 ## 如何預防攻擊（Prevent DDoS attack）
 ### TCP RST scan
-![](https://github.com/ChiaYuSu/linux108b/blob/master/project/nmap_presentation_18.jpg)
+<img src="project\nmap_presentation_18.jpg" width="550px" />
 
 - 步驟（B 主機端口有開啟）
     1. A 主機 -> **SYN** -> B 主機
@@ -85,7 +85,7 @@
 - [Demo 影片]()
 
 ### TCP FIN scan
-![](https://github.com/ChiaYuSu/linux108b/blob/master/project/nmap_presentation_21.jpg)
+<img src="project\nmap_presentation_21.jpg" width="550px" />
 
 - 步驟（B 主機端口有開啟）
     1. A 主機 -> **FIN** -> B 主機
@@ -101,7 +101,7 @@
 - [Demo 影片]()
 
 ### TCP XMAS scan
-![](https://github.com/ChiaYuSu/linux108b/blob/master/project/nmap_presentation_24.jpg)
+<img src="project\nmap_presentation_24.jpg" width="550px" />
 
 - 步驟（B 主機端口有開啟）
     1. A 主機 -> **XMAS（URG + PSH + FIN）** -> B 主機
