@@ -51,7 +51,7 @@
 * [Saltstack 期末報告](https://drive.google.com/open?id=1IhvsjYjrs7-ePL-La_P9rcQAjdg67VOU)
 
 ## 延伸學習
-1. [NMAP.ORG / Nmap Security Scanner](bit.ly/3dkrVnR)
+1. [NMAP.ORG / Nmap Security Scanner](https://bit.ly/3dkrVnR)
 2. [ edureka! / A Complete Guide to Nmap – Nmap Tutorial](bit.ly/3dlovBm)
 3. [sdn-smallko / Anti TCP SYN Port Scan](bit.ly/3elYOlu)
 4. [Noun Project / Icons for everything](bit.ly/3euco6E)
