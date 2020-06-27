@@ -154,10 +154,10 @@
     ```
 - [Demo 影片]()
 
-## 簡報參考
+## 簡報參考（Keynote）
 - [Nmap 網路安全工具 / 網路分析模擬期末報告]()
 
-## 延伸學習
+## 延伸學習（Extended learning）
 1. [NMAP.ORG / Nmap Security Scanner](https://nmap.org/)
 2. [ edureka! / A Complete Guide to Nmap – Nmap Tutorial](https://www.edureka.co/blog/nmap-tutorial/)
 3. [sdn-smallko / Anti TCP SYN Port Scan](http://csie.nqu.edu.tw/smallko/sdn/anti_tcp_syn_port_scan.htm)
