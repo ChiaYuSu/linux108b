@@ -33,6 +33,7 @@
     | ECE（ECN-Echo） | 0 - 1 - 0 - 0 - 0 - 0 - 0 - 0 | 64 |
     | URG（Urgent） | 0 - 0 - 1 - 0 - 0 - 0 - 0 - 0 | 32 |
     | ACK（Acknowledgement） | 0 - 0 - 0 - 1 - 0 - 0 - 0 - 0 | 16 |
+
 - URG（Urgent）：通知接收方此為緊急封包，應優先處理
     - 旗標值（flags）：32
 - ACK（Acknowledgement）：回應對方封包已收到
