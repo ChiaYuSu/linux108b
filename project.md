@@ -42,7 +42,7 @@
 
 | Flag |  | B | i | n | a | r | y |  | Decimal |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----| ---- | ----: |
-| CWR（Congestion Window Reduced） | 1 - 0 - 0 - 0 - 0 - 0 - 0 - 0 | 128 |
+| CWR（Congestion Window Reduced） | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 128 |
 | ECE（ECN-Echo） | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 64 |
 | URG（Urgent） | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 32 |
 | ACK（Acknowledgement） | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 16 |
