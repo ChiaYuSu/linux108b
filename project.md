@@ -60,6 +60,9 @@
     3. A 主機 ->**（ACK）**-> B 主機
     4. A 主機 <-**（建立連線）**-> B 主機
 
+### 不同模式的端口掃描之回應結果
+![](https://github.com/ChiaYuSu/linux108b/blob/master/project/nmap_presentation_16.jpg)
+
 ## 簡報參考
 - [Nmap 網路安全工具 / 網路分析模擬期末報告]()
 
