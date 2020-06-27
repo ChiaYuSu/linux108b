@@ -52,8 +52,8 @@
     - 旗標值（flags）：1
 
 ### 正常情況 TCP / IP 三向交握示意圖
-<img src="project\nmap_presentation_15.jpg" width="550px" />
-
+- 架構示意圖
+    <img src="project\nmap_presentation_15.jpg" width="550px" />
 - 步驟（B 主機端口有開啟）
     1. A 主機 -> **SYN** -> B 主機
     2. B 主機 -> **SYN + ACK** -> A 主機
