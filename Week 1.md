@@ -6,7 +6,7 @@
 - 由於老師不知道本科該如何考試比較好，預計期中考的成績由**筆記**來取代；至於期末考的部分將由報告（內容為**報告一篇論文**）取代
 
 ## 什麼是 SDN
-<img src="project\sdn_ararchitecture.jpg" width="550px" />
+<img src="project\SDN_ararchitecture.jpg" width="550px" />
 - 軟體定義網路（Software-Defined Networking，SDN）是一種新型網路架構
 - 它利用 OpenFlow 協定**將**路由器的**控制平面（control plane）從資料平面（data plane）中分離**，改以**軟體方式實作**，從而使得將分散在各個網路裝置上的控制平面進行集中化管理成為可能
 - 該架構可使網路管理員在**不更動硬體裝置**的前提下，以中央控制方式用程式重新規劃網路，為控制網路流量提供了新方案，也為核心網路和應用創新提供了良好平台
