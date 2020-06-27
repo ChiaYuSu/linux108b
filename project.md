@@ -17,26 +17,26 @@
     - Options：選項（e.g.: scan 80 port）
     - Target：目標主機 IP 位置（e.g.: 192.168.1.1）
     - Example：
-        | 範例 | Scan Types | Options | Target |
-        | ---- | ---- | ---- | ---- |
-        | TCP SYN port scan / scan port 80 / 192.168.1.1 | `-sS` | `-p 80` | `192.168.1.1` |
-        | TCP connect port scan / insane speed scan / 192.168.1.2 | `-sT` | `-T5` | `192.168.1.2` |
-        | UDP port scan / nse script scan / 192.168.1.3 | `-sU` | `-sC` | `192.168.1.3` |
-        | TCP ACK port scan / detect OS / 192.168.0.0/16 | `-sA` | `-O` | `192.168.0.0/16` | 
+        | 範例                                                    | Scan Types | Options | Target           |
+        | ------------------------------------------------------- | ---------- | ------- | ---------------- |
+        | TCP SYN port scan / scan port 80 / 192.168.1.1          | `-sS`      | `-p 80` | `192.168.1.1`    |
+        | TCP connect port scan / insane speed scan / 192.168.1.2 | `-sT`      | `-T5`   | `192.168.1.2`    |
+        | UDP port scan / nse script scan / 192.168.1.3           | `-sU`      | `-sC`   | `192.168.1.3`    |
+        | TCP ACK port scan / detect OS / 192.168.0.0/16          | `-sA`      | `-O`    | `192.168.0.0/16` |
 
 
 ## 背景知識（Background knowledge）
 ### TCP / IP 旗標介紹
-| Flag | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | Decimal |
-| ---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | ----: |
-| CWR（Congestion Window Reduced） | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 128 |
-| ECE（ECN-Echo） | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 64 |
-| URG（Urgent） | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 32 |
-| ACK（Acknowledgement） | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 16 |
-| PSH（Push） | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 8 |
-| RST（Reset） | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 4 |
-| SYN（Synchronization） | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 2 |
-| FIN（Finish） | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
+| Flag                             |  128  |  64   |  32   |  16   |   8   |   4   |   2   |   1   | Decimal |
+| -------------------------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | ------: |
+| CWR（Congestion Window Reduced） |   1   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |     128 |
+| ECE（ECN-Echo）                  |   0   |   1   |   0   |   0   |   0   |   0   |   0   |   0   |      64 |
+| URG（Urgent）                    |   0   |   0   |   1   |   0   |   0   |   0   |   0   |   0   |      32 |
+| ACK（Acknowledgement）           |   0   |   0   |   0   |   1   |   0   |   0   |   0   |   0   |      16 |
+| PSH（Push）                      |   0   |   0   |   0   |   0   |   1   |   0   |   0   |   0   |       8 |
+| RST（Reset）                     |   0   |   0   |   0   |   0   |   0   |   1   |   0   |   0   |       4 |
+| SYN（Synchronization）           |   0   |   0   |   0   |   0   |   0   |   0   |   1   |   0   |       2 |
+| FIN（Finish）                    |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   1   |       1 |
 
 - URG（Urgent）：通知接收方此為緊急封包，應優先處理
     - 旗標值（flags）：32
