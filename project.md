@@ -40,7 +40,7 @@
 - FIN（Finish）：本回合連線傳送完成
     - 旗標值（flags）：1
 
-![](https://github.com/ChiaYuSu/linux108b/blob/master/project/TCP_flags.png)
+        ![](https://github.com/ChiaYuSu/linux108b/blob/master/project/TCP_flags.png)
 
 ### Client 端
 1. 安裝 `epel-release` 套件：`yum install epel-release`
