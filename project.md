@@ -116,6 +116,38 @@
     ```
 - [Demo 影片]()
 
+### TCP NULL scan
+<img src="project\nmap_presentation_27.jpg" width="550px" />
+
+- 步驟（B 主機端口有開啟）
+    1. A 主機 -> **NULL（No Flags）** -> B 主機
+- 規則檔（controller.py）
+    ```python
+    # anti NONE port scan 
+    if (val5>=3) and (TCP in pkt) and pkt[TCP].flags=="":    
+      src = pkt.sprintf('{IP:%IP.src%}')   
+      if src not in blockip:   
+      self.controllers["s1"].table_add("block_pkt", "_drop", [str(src)], [])   
+      blockip.append(src)
+    ```
+- [Demo 影片]()
+
+### TCP Custom scan
+<img src="project\nmap_presentation_30.jpg" width="550px" />
+
+- 步驟（B 主機端口有開啟）
+    1. A 主機 -> **Custom（All Flags）** -> B 主機
+- 規則檔（controller.py）
+    ```python
+    # anti ALL(FSPAU) port scan 
+    if (val6>=3) and (TCP in pkt) and pkt[TCP].flags==59:    
+      src = pkt.sprintf('{IP:%IP.src%}')   
+      if src not in blockip:   
+      self.controllers["s1"].table_add("block_pkt", "_drop", [str(src)], [])   
+      blockip.append(src)
+    ```
+- [Demo 影片]()
+
 ## 簡報參考
 - [Nmap 網路安全工具 / 網路分析模擬期末報告]()
 
