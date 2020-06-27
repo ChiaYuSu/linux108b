@@ -36,4 +36,7 @@
     - Cookie（附屬屬性）：額外標記
 
 ## 延伸學習
-1. []()
+1. [以 SDN 為基礎之網路邊界存取控制系統實作](http://ir.lib.nchu.edu.tw/bitstream/11455/96881/1/nchu-106-5096056021-1.pdf)
+2. [區分 OpenFlow 定義各 Port 弄懂軟體定義網路交換器](https://www.netadmin.com.tw/netadmin/zh-tw/technology/FA061FD873454FB2934151DB0A6C89D1?page=1)
+3. [深入 OpenFlow 協定精髓 看懂 Pipeline 處理流程](https://www.netadmin.com.tw/netadmin/zh-tw/technology/8244EA0CF13646ECB964DFC4B0700961?page=1)
+4. [深入 OpenFlow 協定 詳解 Flow Table 比對機制](https://www.netadmin.com.tw/netadmin/zh-tw/technology/8842ED71637B430A90E72A173B566D36?page=1)
