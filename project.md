@@ -172,7 +172,7 @@
 - [Demo 影片](https://drive.google.com/file/d/1dt6YncuRs_VmdQlbEjsa-ftyvET-I9UX/view?usp=sharing)
 
 ## 簡報參考（Keynote）
-- [Nmap 網路安全工具 / 網路分析模擬期末報告]()
+- [Nmap 網路安全工具 / 網路分析模擬期末報告](https://drive.google.com/file/d/1IoPyAqc2FnRnEczpDcwGsSD1GTPQ2aCs/view?usp=sharing)
 
 ## 延伸學習（Extended learning）
 1. [NMAP.ORG / Nmap Security Scanner](https://nmap.org/)
