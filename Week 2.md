@@ -2,18 +2,21 @@
 ## OpenFlow 是什麼
 <img src="Week 1\SDN_architecture.jpg" width="550px" />
 
-- OpenFlow 是一種網路通訊協定，屬於**資料鏈路層**，能夠控制網路交換器或路由器的轉發平面（Forwarding plane），藉此改變網路封包所走的網路路徑
-- OpenFlow 被認為是第一個軟體定義網路（SDN）標準之一。它最初在 SDN 環境中定義了通信協定，使 SDN **控制器**能夠與物理和虛擬的交換機或路由器等**網路裝置**的轉發平面直接進行互動，從而更好地適應不斷變化的業務需求
+- OpenFlow是一種網路協定，運作於網路七層的第二層，也就是資料鏈結層（Data Link Layer）
+- 這個網路協定主要允許遠端地去控制交換機（Switch）或路由器（Router）的轉發平面（Forwarding Plane），改變網路封包轉送表格，進而遠端地改變網路封包的網路路徑
 
-## OpenFlow 協定重要元件
+## OpenFlow 架構圖
 <img src="Week 2\openflow.png" width="300px" />
 
-* 在 OpenFlow 交換器中處理或轉送封包皆由 Flow Table 中的規則決定，而網路管理者可利用控制器（Controller）新增、刪除或修改來管理交換器中的 Flow Table 的規則內容
-* 當控制器與 OpenFlow 交換器連接成功後，彼此間透過 Control Channel 建立安全通道（Secure Channel）確保 OpenFlow 協定溝通的機密性
-* OpenFlow 交換器基本上包含三個部分
-    * OpenFlow Protocol：控制器和 OpenFlow 交換器彼此溝通的開放協定
-    * Flow Table：規則表（Flow Rule）
-    * Control Channel（Secure Channel）：交換器和控制器之間建立的安全通道，用來讓控制器下達命令給交換器，或者傳遞訊息以及轉送封包
+- Controller：控制器
+- OpenFlow Switch：OpenFlow 交換器
+    - OpenFlow Channel：OpenFlow 通道
+    - Flow Table：規則表
+        - Flow Entry：規則表項
+
+## OpenFlow 協定
+- 在 OpenFlow 交換器中處理或轉送封包皆由 Flow Table 中的規則決定，而網路管理者可利用控制器（Controller）新增、刪除或修改來管理交換器中的 Flow Table 的規則內容
+- 當控制器與 OpenFlow 交換器連接成功後，彼此間透過 Control Channel 建立安全通道（Secure Channel）確保 OpenFlow 協定溝通的機密性
 
 ### Flow Table 簡介
 <img src="Week 2\flow_table.png" width="550px" />
