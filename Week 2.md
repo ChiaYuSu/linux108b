@@ -6,7 +6,7 @@
 - OpenFlow 被認為是第一個軟體定義網路（SDN）標準之一。它最初在 SDN 環境中定義了通信協定，使 SDN **控制器**能夠與物理和虛擬的交換機或路由器等**網路裝置**的轉發平面直接進行互動，從而更好地適應不斷變化的業務需求
 
 ## OpenFlow 協定重要元件
-<img src="Week 2\openflow.png" width="350px" />
+<img src="Week 2\openflow.png" width="300px" />
 
 * 在 OpenFlow 交換器中處理或轉送封包皆由 Flow Table 中的規則決定，而網路管理者可利用控制器（Controller）新增、刪除或修改來管理交換器中的 Flow Table 的規則內容
 * 當控制器與 OpenFlow 交換器連接成功後，彼此間透過 Control Channel 建立安全通道（Secure Channel）確保 OpenFlow 協定溝通的機密性
