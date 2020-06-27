@@ -46,6 +46,10 @@
 | ECE（ECN-Echo） | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 64 |
 | URG（Urgent） | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 32 |
 | ACK（Acknowledgement） | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 16 |
+| PSH（Push） | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 8 |
+| RST（Reset） | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 4 |
+| SYN（Synchronization） | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 2 |
+| FIN（Finish） | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
 
 ## 簡報參考
 * [Saltstack 期末報告](https://drive.google.com/open?id=1IhvsjYjrs7-ePL-La_P9rcQAjdg67VOU)
