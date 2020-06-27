@@ -6,7 +6,7 @@
 - OpenFlow 被認為是第一個軟體定義網路（SDN）標準之一。它最初在 SDN 環境中定義了通信協定，使 SDN **控制器**能夠與物理和虛擬的交換機或路由器等**網路裝置**的轉發平面直接進行互動，從而更好地適應不斷變化的業務需求
 
 ## OpenFlow 協定包含元件
-<img src="Week 2\openflow.png" width="350px" />
+<img src="Week 2\openflow.png" width="250px" />
 
 ## 延伸學習
 1. []()
