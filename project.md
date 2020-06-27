@@ -27,6 +27,7 @@
 
 
 ## 背景知識（Background knowledge）
+
     | Flag | Binary | Decimal |
     | ---- | ---- | ---- |
     | CWR（Congestion Window Reduced） | 1 - 0 - 0 - 0 - 0 - 0 - 0 - 0 | 128 |
