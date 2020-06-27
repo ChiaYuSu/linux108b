@@ -13,10 +13,11 @@
 
 ### Flow Table
 <img src="Week 2\flow_table.png" width="550px" />
-<br>
-<img src="Week 2\flow_processing.png" width="500px" />
 
 - 當網路封包抵達網路交換機時，就會開始根據 Flow Table 中的內容嘗試去比對符合的條件，**Flow Table 中的每一筆資料是有前後優先順序**的，而 **Flow Table 各個表格之間也會有優先順序**。一旦找到相符的 Flow Entry（封包轉送規則），就執行 Flow Entry 中所設定好的動作指令
+
+<img src="Week 2\flow_processing.png" width="500px" />
+
 - 並不是每個封包都可以找到相符的 Flow Entry，所以每張 Flow Table 都必須要有 Table-miss Flow Entry，其目的就是用來告訴交換器該如何處理這些為比對到 Flow Entry 的封包
     - 如果在某一個 Flow Table 中都沒有找到符合的 Flow Entry，則會根據預先設定好的預設值執行動作指令，這預先設定好的動作可能是尋找下一個 Flow Table 的內容，或是直接丟棄（這是預設動作），或者回傳給 Controller 來處理
 
