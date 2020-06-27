@@ -62,14 +62,17 @@
     4. A 主機 <- **建立連線** -> B 主機
 
 ### 不同模式的端口掃描之回應結果
-<img src="project\nmap_presentation_16.jpg" width="550px" />
+- 架構示意圖 
+    <br>
+    <img src="project\nmap_presentation_16.jpg" width="550px" />
 
 - Stealth Scan：隱密掃描（又稱秘密掃描），可規避 **IDS（入侵檢測系統 Intrusion-detection system）**
 
 ## 如何預防攻擊（Prevent DDoS attack）
 ### TCP RST scan
-<img src="project\nmap_presentation_18.jpg" width="550px" />
-
+- 架構示意圖 
+    <br>
+    <img src="project\nmap_presentation_18.jpg" width="550px" />
 - 步驟（B 主機端口有開啟）
     1. A 主機 -> **SYN** -> B 主機
     2. B 主機 -> **SYN + ACK** -> A 主機
@@ -86,8 +89,9 @@
 - [Demo 影片]()
 
 ### TCP FIN scan
-<img src="project\nmap_presentation_21.jpg" width="550px" />
-
+- 架構示意圖 
+    <br>
+    <img src="project\nmap_presentation_21.jpg" width="550px" />
 - 步驟（B 主機端口有開啟）
     1. A 主機 -> **FIN** -> B 主機
 - 規則檔（controller.py）
@@ -102,8 +106,9 @@
 - [Demo 影片]()
 
 ### TCP XMAS scan
-<img src="project\nmap_presentation_24.jpg" width="550px" />
-
+- 架構示意圖 
+    <br>
+    <img src="project\nmap_presentation_24.jpg" width="550px" />
 - 步驟（B 主機端口有開啟）
     1. A 主機 -> **XMAS（URG + PSH + FIN）** -> B 主機
 - 規則檔（controller.py）
@@ -118,8 +123,9 @@
 - [Demo 影片]()
 
 ### TCP NULL scan
-<img src="project\nmap_presentation_27.jpg" width="550px" />
-
+- 架構示意圖 
+    <br>
+    <img src="project\nmap_presentation_27.jpg" width="550px" />
 - 步驟（B 主機端口有開啟）
     1. A 主機 -> **NULL（No Flags）** -> B 主機
 - 規則檔（controller.py）
@@ -134,8 +140,9 @@
 - [Demo 影片]()
 
 ### TCP Custom scan
-<img src="project\nmap_presentation_30.jpg" width="550px" />
-
+- 架構示意圖 
+    <br>
+    <img src="project\nmap_presentation_30.jpg" width="550px" />
 - 步驟（B 主機端口有開啟）
     1. A 主機 -> **Custom（All Flags）** -> B 主機
 - 規則檔（controller.py）
