@@ -8,8 +8,8 @@
 ## OpenFlow 協定重要元件
 <img src="Week 2\openflow.png" width="250px" />
 
-* 一般來說，一個支援 OpenFlow 協定的交換機包含幾個重要元件
-* 如上圖所示，這些包含元件有一個 Group Table 以及多個 Flow Table；OpenFlow Switch 會與上方的 Controller 溝通，這個 Controller 再透過 OpenFlow 協定與 OpenFlow Channel 溝通
+* 在 OpenFlow 交換器中處理或轉送封包皆由 Flow Table 中的規則決定，而網路管理者可利用控制器（Controller）新增、刪除或修改來管理交換器中的 Flow Table 的規則內容
+* 當控制器與 OpenFlow 交換器連接成功後，彼此間透過 Control Channel 建立安全通道（Secure Channel）確保 OpenFlow 協定溝通的機密性
 
 ### Flow Table
 <img src="Week 2\flow_table.png" width="550px" />
@@ -43,9 +43,6 @@
 ### 埠（port）的處理
 - Flow Entry 的動作中可能會指定要轉發到指定的「埠」（Port），這裡的埠可以是**實體在網路交換機上面的埠**，也有可能是**虛擬的埠**，或是**保留的埠**
 - **保留的埠**可能可以執行網路封包的轉發，或是丟到 Controller，或是**轉發到所有其他的埠**，也就是所謂的 **Flooding**，或甚至是透過不是使用 OpenFlow 協定的方式來處理
-
-## OpenFlow Port 的種類介紹
-### OpenFlow Port
 
 ## 延伸學習
 1. []()
