@@ -82,6 +82,24 @@
       self.controllers["s1"].table_add("block_pkt", "_drop", [str(src)], [])   
       blockip.append(src)
     ```
+- [Demo 影片]()
+
+### TCP FIN scan
+![](https://github.com/ChiaYuSu/linux108b/blob/master/project/nmap_presentation_21.jpg)
+
+- 步驟（B 主機端口有開啟）
+    1. A 主機 -> **FIN** -> B 主機
+- 規則檔（controller.py）
+    ```python
+    # anti FIN port scan 
+    if (val3>=3) and (vals<3) and (TCP in pkt) and pkt[TCP].flags==1:          
+      src = pkt.sprintf('{IP:%IP.src%}')   
+      if src not in blockip:   
+      self.controllers["s1"].table_add("block_pkt", "_drop", [str(src)], [])   
+      blockip.append(src)
+    ```
+- [Demo 影片]()
+
 
 ## 簡報參考
 - [Nmap 網路安全工具 / 網路分析模擬期末報告]()
