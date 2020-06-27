@@ -14,13 +14,12 @@
 ### Flow Table
 <img src="Week 2\flow_table.png" width="550px" />
 <br>
-<img src="Week 2\flow_processing.png" width="550px" />
+<img src="Week 2\flow_processing.png" width="500px" />
 
 - 當網路封包抵達網路交換機時，就會開始根據 Flow Table 中的內容嘗試去比對符合的條件，**Flow Table 中的每一筆資料是有前後優先順序**的，而 **Flow Table 各個表格之間也會有優先順序**。一旦找到相符的 Flow Entry（封包轉送規則），就執行 Flow Entry 中所設定好的動作指令
 - 如果在某一個 Flow Table 中都沒有找到符合的 Flow Entry，則會根據預先設定好的預設值執行動作指令，這預先設定好的動作可能是尋找下一個 Flow Table 的內容，或是直接丟棄，或者轉給 OpenFlow Channel 來處理
 
 #### Flow Entry
-
 - Flow Entry 也就是我們所定義的轉發規則，在規則中我們會對符合條件的規則（Match）做相應的動作（Action）
 - Flow Entry 的條目中，帶有以下六種欄位
     - Match fields（比對欄位）：包含 Ingress Port、網路封包的 Header 及可能從上個 Flow Table 傳過來的 Metadata
