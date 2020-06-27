@@ -27,14 +27,6 @@
 
 
 ## 背景知識（Background knowledge）
-
-    | Flag | Binary | Decimal |
-    | ---- | ---- | ---- |
-    | CWR（Congestion Window Reduced） | 1 - 0 - 0 - 0 - 0 - 0 - 0 - 0 | 128 |
-    | ECE（ECN-Echo） | 0 - 1 - 0 - 0 - 0 - 0 - 0 - 0 | 64 |
-    | URG（Urgent） | 0 - 0 - 1 - 0 - 0 - 0 - 0 - 0 | 32 |
-    | ACK（Acknowledgement） | 0 - 0 - 0 - 1 - 0 - 0 - 0 - 0 | 16 |
-
 - URG（Urgent）：通知接收方此為緊急封包，應優先處理
     - 旗標值（flags）：32
 - ACK（Acknowledgement）：回應對方封包已收到
@@ -47,6 +39,13 @@
     - 旗標值（flags）：2
 - FIN（Finish）：本回合連線傳送完成
     - 旗標值（flags）：1
+
+| Flag | Binary | Decimal |
+| ---- | ---- | ---- |
+| CWR（Congestion Window Reduced） | 1 - 0 - 0 - 0 - 0 - 0 - 0 - 0 | 128 |
+| ECE（ECN-Echo） | 0 - 1 - 0 - 0 - 0 - 0 - 0 - 0 | 64 |
+| URG（Urgent） | 0 - 0 - 1 - 0 - 0 - 0 - 0 - 0 | 32 |
+| ACK（Acknowledgement） | 0 - 0 - 0 - 1 - 0 - 0 - 0 - 0 | 16 |
 
 ### Client 端
 1. 安裝 `epel-release` 套件：`yum install epel-release`
