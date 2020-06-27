@@ -27,15 +27,7 @@
     - Match fields（比對欄位）：紀錄該筆 Flow Entry 要比對的封包特徵，若封包的標頭檔與表格上的特徵相符，則代表該封包將被歸類至該筆 Flow Entry
     - Priority（優先序）：代表該筆 Flow Entry 在此 Flow Table 中的匹配順序，優先權較高的 Flow Entry 將被優先比對
     - Counters（計數器）：用來記錄符合該筆 Flow Entry 的封包數與資料大小
-    - Instructions（指令集）：交換器對於隸屬於該筆 Flow Entry 的所有封包應採取的動作
-        | Instructions   | 處理方法                                             |
-        | -------------- | ---------------------------------------------------- |
-        | Meter          | 對匹配到 Flow Entry 的封包進行限速                   |
-        | Apply-Actions  | 立即執行 Action                                      |
-        | Clear-Actions  | 清除動作集（Action Set）中的所有 Action              |
-        | Write-Actions  | 更改動作集（Action Set）中的所有 Action              |
-        | Write-Metadata | 更改 Flow Entry 間資料，在支援多個 Flow Table 時使用 |
-        | Goto-Table     | 進入下一個 Flow Table                                |
+    - Instructions（指令集）：交換器對於隸屬於該筆 Flow Entry 的所有封包應採取的動作，常見的基本動作有 Drop 及 Forward
     - Timeouts（逾時時間）：代表該筆 Flow Entry 存在的最大逾時時間
     - Cookie（附屬屬性）：額外標記
 
