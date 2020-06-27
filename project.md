@@ -52,7 +52,7 @@
     - 旗標值（flags）：1
 
 ### 正常情況 TCP / IP 三向交握示意圖
-![](https://github.com/ChiaYuSu/linux108b/blob/master/project/nmap_presentation_15.jpg)
+<img src="project\nmap_presentation_15.jpg" width="550px" />
 
 - 步驟（B 主機端口有開啟）
     1. A 主機 -> **SYN** -> B 主機
