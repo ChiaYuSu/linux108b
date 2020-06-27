@@ -17,12 +17,12 @@
     - Options：選項（e.g.: scan 80 port）
     - Target：目標主機 IP 位置（e.g.: 192.168.1.1）
 
-| 範例 | Scan Types | Options | target |
-| ---- | ---- | ---- | ---- |
-| TCP SYN port scan / scan port 80 / 192.168.1.1 | `-sS` | `-p 80` | `192.168.1.1` |
-| TCP connect port scan / insane speed scan / 192.168.1.2 | `-sT` | `-T5` | `192.168.1.2` |
-| UDP port scan / nse script scan / 192.168.1.3 | `-sU` | `-sC` | `192.168.1.3` |
-| TCP ACK port scan / detect OS / 192.168.0.0/16 | `-sA` | `-O` | `192.168.0.0/16` | 
+    | 範例 | Scan Types | Options | target |
+    | ---- | ---- | ---- | ---- |
+    | TCP SYN port scan / scan port 80 / 192.168.1.1 | `-sS` | `-p 80` | `192.168.1.1` |
+    | TCP connect port scan / insane speed scan / 192.168.1.2 | `-sT` | `-T5` | `192.168.1.2` |
+    | UDP port scan / nse script scan / 192.168.1.3 | `-sU` | `-sC` | `192.168.1.3` |
+    | TCP ACK port scan / detect OS / 192.168.0.0/16 | `-sA` | `-O` | `192.168.0.0/16` | 
 
 
 ## 背景知識（Background knowledge）
