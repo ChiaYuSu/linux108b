@@ -40,8 +40,8 @@
 - FIN（Finish）：本回合連線傳送完成
     - 旗標值（flags）：1
 
-| Flag | Binary | Decimal |
-| ---- | ---- | ---- |
+| Flag |  | B | i | n | a | r | y |  | Decimal |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----| ---- | ----: |
 | CWR（Congestion Window Reduced） | 1 - 0 - 0 - 0 - 0 - 0 - 0 - 0 | 128 |
 | ECE（ECN-Echo） | 0 - 1 - 0 - 0 - 0 - 0 - 0 - 0 | 64 |
 | URG（Urgent） | 0 - 0 - 1 - 0 - 0 - 0 - 0 - 0 | 32 |
