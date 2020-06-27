@@ -26,6 +26,7 @@
 
 
 ## 背景知識（Background knowledge）
+### TCP / IP 旗標介紹
 | Flag | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | Decimal |
 | ---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | ----: |
 | CWR（Congestion Window Reduced） | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 128 |
@@ -50,7 +51,7 @@
 - FIN（Finish）：本回合連線傳送完成
     - 旗標值（flags）：1
 
-## 正常情況 TCP / IP 三向交握示意圖
+### 正常情況 TCP / IP 三向交握示意圖
 ![](https://github.com/ChiaYuSu/linux108b/blob/master/project/nmap_presentation_15.jpg)
 
 - 步驟（B 主機端口有開啟）
