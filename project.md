@@ -27,6 +27,7 @@
 
 
 ## 背景知識（Background knowledge）
+![](https://github.com/ChiaYuSu/linux108b/blob/master/project/TCP_flags.png)
 - URG（Urgent）：通知接收方此為緊急封包，應優先處理
     - 旗標值（flags）：32
 - ACK（Acknowledgement）：回應對方封包已收到
@@ -39,8 +40,6 @@
     - 旗標值（flags）：2
 - FIN（Finish）：本回合連線傳送完成
     - 旗標值（flags）：1
-
-        ![](https://github.com/ChiaYuSu/linux108b/blob/master/project/TCP_flags.png)
 
 ### Client 端
 1. 安裝 `epel-release` 套件：`yum install epel-release`
