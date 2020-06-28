@@ -10,6 +10,7 @@
   - [第三個實驗 -- 在 h2 添加 NAT 功能](#第三個實驗----在-h2-添加-nat-功能)
     - [拓樸架構](#拓樸架構-2)
     - [程式碼](#程式碼-2)
+    - [執行結果](#執行結果-2)
   - [延伸學習](#延伸學習)
 ---
 # 第五週筆記
@@ -136,6 +137,9 @@ if '__main__' == __name__:
   CLI(net)
   net.stop()
 ```
+
+### 執行結果
+<img src="Week 5\nat.jpg" width="550px" />
 
 ## 延伸學習
 1. [Mininet Operations](http://csie.nqu.edu.tw/smallko/sdn/mininet-operations.htm)
