@@ -25,11 +25,10 @@
 2. 下載 VirtualBox Extension Pack
     - 我下載的版本：6.0.20
 3. 安裝完 Ubuntu 環境後，插入 Guest Additions CD，可以提升我們使用虛擬機的效率
-    <img src="Week 1\guest_additions_CD.png" width="450px" />
     1. 可以讓畫面自動等比例縮放（自適應螢幕）
     2. 可以讓 Ubuntu 和 Windows 做無縫相接（雙向共用剪貼簿、雙向共用資料夾、雙向拖放資料）
     3. 全螢幕模式
-
+    <img src="Week 1\guest_additions_CD.png" width="450px" />
 ## 延伸學習
 1. [ubuntu 正體中文站](https://www.ubuntu-tw.org/modules/tinyd0/)
 2. [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
