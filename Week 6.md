@@ -6,6 +6,7 @@
     - [最簡單參數實例](#最簡單參數實例)
     - [雙向頻寬測試（`-r`、tradeoff）](#雙向頻寬測試-rtradeoff)
     - [同步雙向頻寬測試（`-d`、dualtest）](#同步雙向頻寬測試-ddualtest)
+  - [Gnuplot 畫圖工具](#gnuplot-畫圖工具)
   - [延伸學習](#延伸學習)
 ---
 # 第六週筆記
@@ -45,6 +46,8 @@
 - xterm h2：`iperf -c 10.0.0.1 -d`
     - `-d`：可以同步測量雙向頻寬，過程為雙方同時測試傳送與接收頻寬<br>
         <img src="Week 6\dualtest.PNG" width="700px" />
+
+## Gnuplot 畫圖工具
 
 ## 延伸學習
 1. [网络性能测试工具 Iperf 介绍](https://www.sdnlab.com/2961.html)
