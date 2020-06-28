@@ -12,13 +12,13 @@
 ---
 # 第三週筆記
 ## OpenFlow 是什麼
-<img src="Week 1\SDN_architecture.jpg" width="550px" />
+<img src="Week 2\SDN_architecture.jpg" width="550px" />
 
 - OpenFlow是一種網路協定，運作於網路七層的第二層，也就是資料鏈結層（Data Link Layer）
 - 這個網路協定主要允許遠端地去控制交換機（Switch）或路由器（Router）的轉發平面（Forwarding Plane），改變網路封包轉送表格，進而遠端地改變網路封包的網路路徑
 
 ## OpenFlow 架構圖
-<img src="Week 2\openflow.png" width="300px" />
+<img src="Week 3\openflow.png" width="300px" />
 
 - Controller：控制器
 - OpenFlow Switch：OpenFlow 交換器
@@ -31,7 +31,7 @@
 - 當控制器與 OpenFlow 交換器連接成功後，彼此間透過 Control Channel 建立安全通道（Secure Channel）確保 OpenFlow 協定溝通的機密性
 
 ## Pipeline 處理流程
-<img src="Week 2\flow_table.png" width="550px" />
+<img src="Week 3\flow_table.png" width="550px" />
 
 - 每個 OpenFlow 協定的網路交換機的 OpenFlow Pipeline 至少會包含一個或是以上的 Flow Table，而 OpenFlow Pipeline 的目的在於定義網路封包如何與這些 Flow Table 做互動
 - 這些 Flow Table 從零開始編號，每個 Flow Table 都有編號，而每個網路封包的 Pipeline 處理都會從 Flow Table = 0 開始做處理
@@ -45,7 +45,7 @@
 - 當發生 Table Miss 時，會執行原本設定好的 Table Miss 指定動作（預設為丟棄封包），這個設定是每個 Flow Table 分開的。這樣的動作有可能是要直接丟棄網路封包，或是到另外一個指定的 Flow Table 繼續 Pipeline 處理過程，也有可能是送往 Controller
 
 ## Flow Table 的比對過程
-<img src="Week 2\flow_processing.png" width="500px" />
+<img src="Week 3\flow_processing.png" width="500px" />
 
 - 基本上，整個 Flow Table 的比對過程可以用上圖來解釋
 - 當收到一個網路封包的時候，會先從第一個 Flow Table 開始執行比對動作，這是剛才提到 Pipeline 處理過程的一部分。而第一個 Flow Table 編號是從 0 開始，比對之前會先從網路封包中擷取出需要比對的資訊，而會擷取出來的資訊，根據不同的網路封包而有所不同
