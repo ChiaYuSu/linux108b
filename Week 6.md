@@ -2,6 +2,7 @@
   - [Iperf 是什麼](#iperf-是什麼)
   - [Iperf 安裝](#iperf-安裝)
   - [Iperf 參數說明](#iperf-參數說明)
+    - [Iperf 測試 TCP](#iperf-測試-tcp)
   - [延伸學習](#延伸學習)
 ---
 # 第六週筆記
@@ -14,6 +15,7 @@
 ## Iperf 參數說明
 - `-s`：主機以 Server 模式啟動
 - `-c`：主機以 Client 模式啟動
+### Iperf 測試 TCP
 - 範例：假設有兩台主機 h1 及 h2，h1 當作 Server、h2 當作 Client，從 Client 端到 Server 端做網路頻寬測試
     - xterm h1：`iperf -s`
     - xterm h2：`iperf -c -i 1`
@@ -24,4 +26,4 @@
 
 
 ## 延伸學習
-1. []()
+1. [网络性能测试工具 Iperf 介绍](https://www.sdnlab.com/2961.html)
