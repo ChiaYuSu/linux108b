@@ -1,9 +1,20 @@
 - [第四週筆記](#第四週筆記)
+  - [安裝 mininet-wifi](#安裝-mininet-wifi)
   - [mininet 指令介紹](#mininet-指令介紹)
   - [mininet 參數模式](#mininet-參數模式)
   - [延伸學習](#延伸學習)
 ---
 # 第四週筆記
+## 安裝 mininet-wifi
+1. Open VirtualBox
+2. Open Ubuntu 16.04 LTS
+3. Open terminal
+4. Switch to Super User: `su`
+5. Enter Super User Password
+6. Clone the project of mininet-wifi: `git clone https://github.com/mininet/mininet.git`
+7. Change Directory: `cd mininet`
+8. Install: `sudo util/install.sh`
+9. 
 ## mininet 指令介紹
 1. 開始 mininet：`mn`
    - 由下圖可看出此基本網路拓樸中包含兩個虛擬 host（h1、h2）、一個 switch（s1）與一個　controller（c0）<br>
