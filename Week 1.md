@@ -1,18 +1,11 @@
-- [第一週筆記](#第一週筆記)
-  - [本學期上課內容](#本學期上課內容)
-  - [期中考、期末考評量方式](#期中考期末考評量方式)
+- [第三週筆記](#第三週筆記)
   - [安裝 Ubuntu 16.04 LTS](#安裝-ubuntu-1604-lts)
     - [環境介紹](#環境介紹)
     - [環境安裝](#環境安裝)
+  - [安裝 mininet-wifi](#安裝-mininet-wifi)
   - [延伸學習](#延伸學習)
 ---
-# 第一週筆記
-## 本學期上課內容
-- SDN、mininet、ryu controller、p4 switch
-
-## 期中考、期末考評量方式
-- 由於老師不知道本科該如何考試比較好，預計期中考的成績由**筆記**來取代；至於期末考的部分將由報告（內容為**報告一篇論文**）取代
-
+# 第三週筆記
 ## 安裝 Ubuntu 16.04 LTS
 ### 環境介紹
 - 本學期課程所需要的環境
@@ -28,7 +21,17 @@
     1. 可以讓畫面自動等比例縮放（自適應螢幕）
     2. 可以讓 Ubuntu 和 Windows 做無縫相接（雙向共用剪貼簿、雙向共用資料夾、雙向拖放資料）
     3. 全螢幕模式
-      <img src="Week 1\guest_additions_CD.png" width="350px" />
+      <img src="Week 3\guest_additions_CD.png" width="400px" />
+
+## 安裝 mininet-wifi
+1. Open VirtualBox
+2. Open Ubuntu 16.04 LTS
+3. Open terminal
+4. Switch to Super User: `su`
+5. Enter Super User Password
+6. Clone the project of mininet-wifi: `git clone https://github.com/intrig-unicamp/mininet-wifi.git`
+
 ## 延伸學習
 1. [ubuntu 正體中文站](https://www.ubuntu-tw.org/modules/tinyd0/)
 2. [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+3. [Github / mininet](https://github.com/intrig-unicamp/mininet-wifi)
