@@ -3,6 +3,7 @@
     - [環境介紹](#環境介紹)
     - [環境安裝](#環境安裝)
   - [安裝 mininet-wifi](#安裝-mininet-wifi)
+  - [mininet-wifi 介紹](#mininet-wifi-介紹)
   - [延伸學習](#延伸學習)
 ---
 # 第三週筆記
@@ -30,6 +31,11 @@
 4. Switch to Super User: `su`
 5. Enter Super User Password
 6. Clone the project of mininet-wifi: `git clone https://github.com/intrig-unicamp/mininet-wifi.git`
+7. Change Directory: `cd mininet-wifi`
+8. Install: `sudo util/install.sh -Wnfv`
+
+## mininet-wifi 介紹
+- mininet-wifi 是一個無線網路仿真器（Emulator），允許使用者採用軟體的方式建置所需要的無線網路，可以建構成具有基礎架構的無線網路（Infrastructure Mode，包含基地台和行動主機）或者是無線隨意網路（AdHoc Mode，只有行動主機）非常的方便，只需要全軟體的操作，不需要額外再購買其他的硬體
 
 ## 延伸學習
 1. [ubuntu 正體中文站](https://www.ubuntu-tw.org/modules/tinyd0/)
