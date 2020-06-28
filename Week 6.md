@@ -7,6 +7,7 @@
     - [雙向頻寬測試（`-r`、tradeoff）](#雙向頻寬測試-rtradeoff)
     - [同步雙向頻寬測試（`-d`、dualtest）](#同步雙向頻寬測試-ddualtest)
   - [Gnuplot 畫圖工具](#gnuplot-畫圖工具)
+  - [Iperf 結合 Gnuplot 將測試結果畫圖表示](#iperf-結合-gnuplot-將測試結果畫圖表示)
   - [延伸學習](#延伸學習)
 ---
 # 第六週筆記
@@ -51,6 +52,9 @@
 - gnuplot 是一套跨平臺的數學繪圖自由軟體。使用命令列介面，可以繪製數學函數圖形，也可以從純文字檔讀入簡單格式的座標資料，繪製統計圖表等等
 - 它可以提供多種輸出格式，例如 PNG，SVG，PS，HPGL，供文書處理、簡報、試算表使用。它並不是統計軟體或數學軟體
     <img src="Week 6\gnuplot.PNG" width="700px" />
+
+## Iperf 結合 Gnuplot 將測試結果畫圖表示
+
 
 ## 延伸學習
 1. [网络性能测试工具 Iperf 介绍](https://www.sdnlab.com/2961.html)
