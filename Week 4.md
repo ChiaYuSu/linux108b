@@ -9,9 +9,9 @@
       <img src="Week 4\mininet_mn.PNG" width="550px" />
 2. 查看 mininet 環境下所有可用指令：`help`<br>
    <img src="Week 4\mininet_help.PNG" width="550px" />
-3. 查看各鏈結訊息：`net`
+3. 查看各鏈結訊息：`net`<br>
    <img src="Week 4\mininet_net.PNG" width="550px" />
-4. 查看各節點的訊息：`dump`
+4. 查看各節點的訊息：`dump`<br>
    <img src="Week 4\mininet_dump.PNG" width="550px" />
 5. 離開 mininet：`exit`<br>
    <img src="Week 4\mininet_exit.PNG" width="550px" />
