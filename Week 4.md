@@ -41,7 +41,7 @@
 
 ## mininet 參數模式
 - 指令格式化：`mn [-topo] [-controller] [-link] [-switch] [-mac] [-nat] [-ipbase]`
-1. 清除 mininet 設定，目的是清除上一個執行完的拓樸，避免下一個在執行時出錯：`mn -c`
+1. 清除 mininet 設定，目的是清除上一個執行完的拓樸，避免下一個在執行時出錯：`mn -c`<br>
    <img src="Week 4\mininet_c.PNG" width="550px" />
 
 ## 延伸學習
