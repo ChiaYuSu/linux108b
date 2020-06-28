@@ -4,12 +4,10 @@
 ---
 # 第四週筆記
 ## mininet 指令介紹
-1. 開始 mininet：`mn`
-
+1. 開始 mininet：`mn`<br>
    <img src="Week 4\mininet_mn.PNG" width="400px" />
 2. 離開 mininet：`exit`
-3. 查看 mininet 環境下所有可用指令：`help`
-
+3. 查看 mininet 環境下所有可用指令：`help`<br>
    <img src="Week 4\mininet_help.PNG" width="400px" />
 4. 
 
