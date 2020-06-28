@@ -6,7 +6,8 @@
 ## mininet 指令介紹
 1. 開始 mininet：`mn`<br>
    <img src="Week 4\mininet_mn.PNG" width="550px" />
-2. 離開 mininet：`exit`
+2. 離開 mininet：`exit`<br>
+   <img src="Week 4\mininet_exit.PNG" width="550px" />
 3. 查看 mininet 環境下所有可用指令：`help`<br>
    <img src="Week 4\mininet_help.PNG" width="550px" />
 4. 
