@@ -41,6 +41,14 @@
 
 ## mininet 參數模式
 - 指令格式化：`mn [-topo] [-controller] [-link] [-switch] [-mac] [-nat] [-ipbase]`
+    - `--topo`：自定義拓樸，如 `linear`、`minimal`、`reversed`、`single`、`torus`、`tree`
+    - `--link`：自定義網路參數，如 `default`、`ovs`、`tc`
+    - `--switch`：自定義虛擬交換機，如 `default`、`ivs`、`lxbr`、`ovs`、`ovsbr`、`ovsk`、`user`
+    - `--controller`：自定義控制器，如 `default`、`none`、`nox`、`ovsc`、`ref`、`remote`、`ryu`
+    - `--nat`：自動設置 NAT
+    - `--cluster`：集群模式，將網路拓樸運行在多台主機上
+    - `--mac`：自動設置主機 MAC
+    - `--arp`：自動設置 ARP 表
 1. 清除 mininet 設定，目的是清除上一個執行完的拓樸，避免下一個在執行時出錯：`mn -c`<br>
    <img src="Week 4\mininet_c.PNG" width="550px" />
 2. 比較有無 `--nat` 參數的差異：`mn` vs. `mn --nat`
@@ -48,6 +56,7 @@
       <img src="Week 4\mininet_no_nat.PNG" width="550px" />
    - `mn --nat`：自動設置 NAT，h1 主機可以 ping `8.8.8.8`<br>
       <img src="Week 4\mininet_nat.PNG" width="550px" />
+3. 
 
 ## 延伸學習
 1. [Lab 1-mininet 介紹、安裝與使用方法](https://sites.google.com/site/sdnruantidingyiwanglu/vmware-xia-zai-yu-an-zhuang/mininet)
