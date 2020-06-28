@@ -33,7 +33,9 @@
       <img src="Week 4\mininet_wireshark_ping.PNG" width="550px" />
 12. 兩節點之間進行 iperf TCP 測試：`iperf`<br>
    <img src="Week 4\mininet_iperf.PNG" width="550px" />
-13. 離開 mininet：`exit`<br>
+13. 執行 python 指令：`py + 指令/[檔案名].py`
+   <img src="Week 4\mininet_py.PNG" width="550px" />
+14. 離開 mininet：`exit`<br>
    <img src="Week 4\mininet_exit.PNG" width="550px" />
 
 
