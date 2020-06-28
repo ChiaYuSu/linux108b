@@ -42,11 +42,13 @@
 ## mininet 參數模式
 - 指令格式化：`mn [-topo] [-controller] [-link] [-switch] [-mac] [-nat] [-ipbase]`
     - `--topo`：自定義拓樸，如 `linear`、`minimal`、`reversed`、`single`、`torus`（較少用）、`tree`
-        - `linear`：線性的，範例 `mn --topo=linear,2`<br>
+        - `linear`：線性的，每個交換機連接一個主機，範例 `mn --topo=linear,2`<br>
             <img src="Week 4\linear_2.png" width="550px" />
         - `minimal`：最小的網路拓樸，範例 `mn --topo=minimal`<br>
             <img src="Week 4\minimal.png" width="550px" />
-        - `reversed`、`single`：相反的、單個交換機，範例 `mn --topo=reversed,3`、`mn --topo=single,3`<br>
+        - `reversed`：主機埠號大小與交換機埠號大小正好相反，即最小埠號對應交換機最大埠號，範例 `mn --topo=reversed,3`<br>
+            <img src="Week 4\reversed_single.png" width="550px" />
+        - `single`：單個交換機，每個主機都連到同一個交換機上，範例 `mn --topo=single,3`<br>
             <img src="Week 4\reversed_single.png" width="550px" />
         - `tree`：數狀拓樸，範例 `mn --topo=tree,fanout=2,depth=2`（扇出 = 2，深度 = 2；第一層一個交換機，第二層兩個交換機，主機 2 * 2 = 4）<br>
             <img src="Week 4\tree.png" width="550px" />
