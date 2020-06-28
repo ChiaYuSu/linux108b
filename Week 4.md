@@ -24,14 +24,16 @@
 9.  叫出兩個節點的命令視窗：`xterm h1 h2`
    - 若無反應代表環境未安裝 xterm，需先安裝：開啟一個新的 terminal -> `su` -> `apt-get install xterm`<br>
       <img src="Week 4\mininet_xterm.PNG" width="550px" />
-11. 安裝 wireshark 觀察封包轉發情形：開啟一個新的 terminal -> `su` -> `apt-get install wireshark`<br>
+10. 安裝 wireshark 觀察封包轉發情形：開啟一個新的 terminal -> `su` -> `apt-get install wireshark`<br>
    <img src="Week 4\mininet_wireshark.PNG" width="550px" />
 11. 開啟 wireshark 選擇 s1-eth1，h2 節點 ping h1 節點，觀察封包轉發情形
    - xterm h1：`ifconfig`（得知 IP 為 10.0.0.1）
    - xterm h2：`ifconfig`（得知 IP 為 10.0.0.2）
    - xterm h2：`h2 ping -c 4 h1`（h2 ping h1 四次）<br>
       <img src="Week 4\mininet_wireshark_ping.PNG" width="550px" />
-11. 離開 mininet：`exit`<br>
+12. 兩節點之間進行 iperf TCP 測試：`iperf`<br>
+   <img src="Week 4\mininet_iperf.PNG" width="550px" />
+13. 離開 mininet：`exit`<br>
    <img src="Week 4\mininet_exit.PNG" width="550px" />
 
 
