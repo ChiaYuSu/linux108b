@@ -1,5 +1,6 @@
 - [第四週筆記](#第四週筆記)
   - [mininet 指令介紹](#mininet-指令介紹)
+  - [mininet 參數模式](#mininet-參數模式)
   - [延伸學習](#延伸學習)
 ---
 # 第四週筆記
@@ -38,6 +39,10 @@
 14. 離開 mininet：`exit`<br>
    <img src="Week 4\mininet_exit.PNG" width="550px" />
 
+## mininet 參數模式
+- 指令格式化：`mn [-topo] [-controller] [-link] [-switch] [-mac] [-nat] [-ipbase]`
+1. 清除 mininet 設定，目的是清除上一個執行完的拓樸，避免下一個在執行時出錯：`mn -c`
+   <img src="Week 4\mininet_c.PNG" width="550px" />
 
 ## 延伸學習
 1. [Lab 1-mininet 介紹、安裝與使用方法](https://sites.google.com/site/sdnruantidingyiwanglu/vmware-xia-zai-yu-an-zhuang/mininet)
