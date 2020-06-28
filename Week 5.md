@@ -37,7 +37,8 @@ if '__main__' == __name__:
   net.stop()
   ```
 ### 執行結果
-<img src="Week 5\h2_ifconfig.PNG" width="550px" />
+<img src="Week 5\h2_ifconfig.PNG" width="550px" /><br>
+<img src="Week 5\h1_ping_h2.PNG" width="550px" />
 
 
 ## 延伸學習
