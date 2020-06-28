@@ -3,6 +3,7 @@
   - [Iperf 安裝](#iperf-安裝)
   - [Iperf 參數說明](#iperf-參數說明)
     - [Iperf 測試 TCP](#iperf-測試-tcp)
+    - [最簡單參數實例](#最簡單參數實例)
   - [延伸學習](#延伸學習)
 ---
 # 第六週筆記
@@ -15,6 +16,7 @@
 ## Iperf 參數說明
 - `-s`：主機以 Server 模式啟動
 - `-c`：主機以 Client 模式啟動
+- 
 ### Iperf 測試 TCP
 - 範例：假設有兩台主機 h1 及 h2，h1 當作 Server、h2 當作 Client，從 Client 端到 Server 端做網路頻寬測試
     - xterm h1：`iperf -s`
@@ -22,6 +24,11 @@
         - `-i`：sec 以秒為單位顯示報告間隔
         - `1`：1 秒<br>
           <img src="Week 6\iperf.PNG" width="700px" />
+
+### 最簡單參數實例
+- xterm h1：`iperf -s`
+- xterm h2：`iperf -c 10.0.0.1`<br>
+    <img src="Week 6\iperf_simple.PNG" width="700px" />
 
 
 
