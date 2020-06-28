@@ -4,7 +4,8 @@
   - [Iperf 參數說明](#iperf-參數說明)
     - [Iperf 測試 TCP](#iperf-測試-tcp)
     - [最簡單參數實例](#最簡單參數實例)
-    - [雙向頻寬測試](#雙向頻寬測試)
+    - [雙向頻寬測試（`-r`、tradeoff）](#雙向頻寬測試-rtradeoff)
+    - [同步雙向頻寬測試（`-d`、dualtest）](#同步雙向頻寬測試-ddualtest)
   - [延伸學習](#延伸學習)
 ---
 # 第六週筆記
@@ -33,12 +34,18 @@
 - xterm h2：`iperf -c 10.0.0.1`<br>
     <img src="Week 6\iperf_simple.PNG" width="700px" />
 
-### 雙向頻寬測試
+### 雙向頻寬測試（`-r`、tradeoff）
 - xterm h1：`iperf -s`
 - xterm h2：`iperf -c 10.0.0.1 -r`
-    - `-r`：可以測量雙向頻寬，Iperf 伺服器會主動向 Client 端發起連接
+    - `-r`：可以測量雙向頻寬，Iperf 伺服器會主動向 Client 端發起連接，過程為先測試傳送再測試接收頻寬<br>
         <img src="Week 6\bidirect.PNG" width="700px" />
 
+### 同步雙向頻寬測試（`-d`、dualtest）
+- xterm h1：`iperf -s`
+- xterm h2：`iperf -c 10.0.0.1 -d`
+    - `-d`：可以同步測量雙向頻寬，過程為雙方同時測試傳送與接收頻寬<br>
+        <img src="Week 6\dualtest.PNG" width="700px" />
 
 ## 延伸學習
 1. [网络性能测试工具 Iperf 介绍](https://www.sdnlab.com/2961.html)
+2. [Iperf 使用說明](https://m1016c.pixnet.net/blog/post/145780230)
