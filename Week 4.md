@@ -20,7 +20,12 @@
       <img src="Week 4\mininet_xterm.PNG" width="550px" />
 7. 安裝 wireshark 觀察封包轉發情形：開啟一個新的 terminal -> `su` -> `apt-get install wireshark`<br>
    <img src="Week 4\mininet_wireshark.PNG" width="550px" />
-8. 離開 mininet：`exit`<br>
+8. 開啟 wireshark 選擇 s1-eth1，h2 節點 ping h1 節點，觀察封包轉發情形
+   - xterm h1：`ifconfig`（得知 IP 為 10.0.0.1）
+   - xterm h2：`ifconfig`（得知 IP 為 10.0.0.2）
+   - xterm h2：`h2 ping -c 3 h1`（h2 ping h1 三次）
+      <img src="Week 4\mininet_wireshark_ping.PNG" width="550px" />
+9.  離開 mininet：`exit`<br>
    <img src="Week 4\mininet_exit.PNG" width="550px" />
 
 
