@@ -48,7 +48,7 @@
             <img src="Week 4\minimal.png" width="550px" />
         - `reversed`、`single`：相反的、單個交換機，範例 `mn --topo=reversed,3`、`mn --topo=single,3`<br>
             <img src="Week 4\reversed_single.png" width="550px" />
-        - `tree`：數狀拓樸，範例 `mn --topo=tree,fanout=2,depth=2`<br>
+        - `tree`：數狀拓樸，範例 `mn --topo=tree,fanout=2,depth=2`（扇出 = 2，深度 = 2；第一層一個交換機，第二層兩個交換機，主機 2 * 2 = 4）<br>
             <img src="Week 4\tree.png" width="550px" />
     - `--link`：自定義網路參數，如 `default`、`ovs`、`tc`
     - `--switch`：自定義虛擬交換機，如 `default`、`ivs`、`lxbr`、`ovs`、`ovsbr`、`ovsk`、`user`
