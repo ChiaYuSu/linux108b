@@ -13,7 +13,9 @@
    <img src="Week 4\mininet_net.PNG" width="550px" />
 4. 查看各節點的訊息：`dump`<br>
    <img src="Week 4\mininet_dump.PNG" width="550px" />
-5. 離開 mininet：`exit`<br>
+5. 測試 h1 節點 ping h2 節點：`h1 ping -c 3 h2`<br>
+   <img src="Week 4\mininet_ping.PNG" width="550px" />
+6. 離開 mininet：`exit`<br>
    <img src="Week 4\mininet_exit.PNG" width="550px" />
 
 
