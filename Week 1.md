@@ -28,7 +28,7 @@
     1. 可以讓畫面自動等比例縮放（自適應螢幕）
     2. 可以讓 Ubuntu 和 Windows 做無縫相接（雙向共用剪貼簿、雙向共用資料夾、雙向拖放資料）
     3. 全螢幕模式
-    <img src="Week 1\guest_additions_CD.png" width="450px" />
+      <img src="Week 1\guest_additions_CD.png" width="450px" />
 ## 延伸學習
 1. [ubuntu 正體中文站](https://www.ubuntu-tw.org/modules/tinyd0/)
 2. [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
