@@ -4,6 +4,7 @@
   - [Iperf 參數說明](#iperf-參數說明)
     - [Iperf 測試 TCP](#iperf-測試-tcp)
     - [最簡單參數實例](#最簡單參數實例)
+    - [雙向頻寬測試](#雙向頻寬測試)
   - [延伸學習](#延伸學習)
 ---
 # 第六週筆記
@@ -26,10 +27,17 @@
           <img src="Week 6\iperf.PNG" width="700px" />
 
 ### 最簡單參數實例
+- Iperf Client 端連接 Iperf 伺服器的 TCP 默認端口為 5001，若需要更改埠號可以使用 `-p` 參數做修改
+- 下圖結果顯示的頻寬是從 Client 端到 Server 端之間的頻寬，可以從圖中得知 xterm h1 及 xterm h2 Banwidth 值是一樣的
 - xterm h1：`iperf -s`
 - xterm h2：`iperf -c 10.0.0.1`<br>
     <img src="Week 6\iperf_simple.PNG" width="700px" />
 
+### 雙向頻寬測試
+- xterm h1：`iperf -s`
+- xterm h2：`iperf -c 10.0.0.1 -r`
+    - `-r`：可以測量雙向頻寬，Iperf 伺服器會主動向 Client 端發起連接
+        <img src="Week 6\bidirect.PNG" width="700px" />
 
 
 ## 延伸學習
