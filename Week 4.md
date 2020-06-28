@@ -56,7 +56,8 @@
       <img src="Week 4\mininet_no_nat.PNG" width="550px" />
    - `mn --nat`：自動設置 NAT，h1 主機可以 ping `8.8.8.8`<br>
       <img src="Week 4\mininet_nat.PNG" width="550px" />
-3. 
+3. 建立拓樸，拓樸架構如下圖所示：`mn --topo single,3 --mac --switch ovsk --controller remote`
+   <img src="Week 4\mn_topo.PNG" width="550px" />
 
 ## 延伸學習
 1. [Lab 1-mininet 介紹、安裝與使用方法](https://sites.google.com/site/sdnruantidingyiwanglu/vmware-xia-zai-yu-an-zhuang/mininet)
