@@ -42,6 +42,8 @@
 ## mininet 參數模式
 - 指令格式化：`mn [-topo] [-controller] [-link] [-switch] [-mac] [-nat] [-ipbase]`
     - `--topo`：自定義拓樸，如 `linear`、`minimal`、`reversed`、`single`、`torus`、`tree`
+        - `linear`：線性的，範例 `mn --topo=linear,2`
+         <img src="Week 4\linear_2.PNG" width="550px" />
     - `--link`：自定義網路參數，如 `default`、`ovs`、`tc`
     - `--switch`：自定義虛擬交換機，如 `default`、`ivs`、`lxbr`、`ovs`、`ovsbr`、`ovsk`、`user`
     - `--controller`：自定義控制器，如 `default`、`none`、`nox`、`ovsc`、`ref`、`remote`、`ryu`
