@@ -44,8 +44,10 @@
     - `--topo`：自定義拓樸，如 `linear`、`minimal`、`reversed`、`single`、`torus`、`tree`
         - `linear`：線性的，範例 `mn --topo=linear,2`<br>
             <img src="Week 4\linear_2.png" width="550px" />
-        - `minimal`：最小的網路拓樸，範例 `mn --topo-minimal`
+        - `minimal`：最小的網路拓樸，範例 `mn --topo=minimal`
             <img src="Week 4\minimal.png" width="550px" />
+        - `reversed`、`single`：相反的、單個交換機，範例 `mn --topo=reversed,3`、`mn --topo=single,3`
+            <img src="Week 4\reversed_single.png" width="550px" />
     - `--link`：自定義網路參數，如 `default`、`ovs`、`tc`
     - `--switch`：自定義虛擬交換機，如 `default`、`ivs`、`lxbr`、`ovs`、`ovsbr`、`ovsk`、`user`
     - `--controller`：自定義控制器，如 `default`、`none`、`nox`、`ovsc`、`ref`、`remote`、`ryu`
