@@ -18,8 +18,8 @@
     - xterm h1：`iperf -s`
     - xterm h2：`iperf -c -i 1`
         - `-i`：sec 以秒為單位顯示報告間隔
-        - `1`：1 秒
-            <img src="Week 6\iperf.PNG" width="550px" />
+        - `1`：1 秒<br>
+          <img src="Week 6\iperf.PNG" width="550px" />
 
 
 
