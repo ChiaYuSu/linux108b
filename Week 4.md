@@ -43,6 +43,11 @@
 - 指令格式化：`mn [-topo] [-controller] [-link] [-switch] [-mac] [-nat] [-ipbase]`
 1. 清除 mininet 設定，目的是清除上一個執行完的拓樸，避免下一個在執行時出錯：`mn -c`<br>
    <img src="Week 4\mininet_c.PNG" width="550px" />
+2. 比較有無 `--nat` 參數的差異：`mn` vs. `mn --nat`
+   - `mn`：h1 主機無法 ping `8.8.8.8`
+      <img src="Week 4\mininet_no_nat.PNG" width="550px" /><br>
+   - `mn --nat`：自動設置 NAT，h1 主機可以 ping `8.8.8.8`
+      <img src="Week 4\mininet_nat.PNG" width="550px" /><br>
 
 ## 延伸學習
 1. [Lab 1-mininet 介紹、安裝與使用方法](https://sites.google.com/site/sdnruantidingyiwanglu/vmware-xia-zai-yu-an-zhuang/mininet)
