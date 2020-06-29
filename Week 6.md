@@ -54,8 +54,15 @@
     <img src="Week 6\gnuplot.PNG" width="700px" />
 
 ## Iperf 結合 Gnuplot 將測試結果畫圖表示
-
+1. 初始化 mininet 最小拓樸結構：`mn`
+2. 在 mininet 終端打開 h1、h2 主機 xterm：`xterm h1 h2`
+3. 將 h1 主機當作 Server 端，並將結果保存到文件 result 中：`iperf -s -i 1 > result`
+4. 將 h2 主機當作 Client 端，連接到 h1（IP 為 10.0.0.1）：`iperf -c 10.0.0.1`
+5. 經過 10 秒後，在 h2 自動生成了文件 result，儲存此次連接的訊息，在 h2 終端中查看 result 內容：`cat result`
+    <img src="Week 6\result.PNG" width="700px" />
+6. 
 
 ## 延伸學習
 1. [网络性能测试工具 Iperf 介绍](https://www.sdnlab.com/2961.html)
 2. [Iperf 使用說明](https://m1016c.pixnet.net/blog/post/145780230)
+3. [在 mininet 中測試 TCP、UDP 帶寬並作圖](https://www.twblogs.net/a/5b7eaae32b717767c6ab0db0)
