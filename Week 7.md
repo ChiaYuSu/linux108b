@@ -13,5 +13,6 @@
 2. 開啟 docker：`systemctl enable docker`
 3. 確認 docker 是否有被開啟（若有開啟會出現綠色 active 字樣）：`service docker status`
 
+
 ## 延伸學習
-1. []()
+1. [Ubuntu Linux 安裝 Docker 步驟與使用教學](https://blog.gtwang.org/virtualization/ubuntu-linux-install-docker-tutorial/)
