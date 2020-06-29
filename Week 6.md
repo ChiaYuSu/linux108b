@@ -67,13 +67,15 @@
 9. 在 xterm h2 進入 gnuplot：`gnuplot`
 10. 在 gnuplot 命令行中，將剛才得到的文件 new_result 畫圖：`plot "new_result" title "tcp flow" with linespoints`
     <img src="Week 6\tcp_flow.PNG" width="700px" />
-11. 將縱座標範圍改爲40-60，添加橫縱座標標籤，並重新作圖
+11. 將縱座標範圍改爲 40-42，添加橫縱座標標籤，並重新作圖
     ```python
-    set yrang [40:60]
+    set yrang [40:42]
     set xlabel "time (sec)"
     set ylabel "tcp throughput (Mbps)"
     replot
     ```
+    <img src="Week 6\tcp_flow_replot.PNG" width="700px" />
+
 
 ## 延伸學習
 1. [网络性能测试工具 Iperf 介绍](https://www.sdnlab.com/2961.html)
