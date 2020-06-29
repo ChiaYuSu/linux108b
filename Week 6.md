@@ -60,7 +60,20 @@
 4. 將 h2 主機當作 Client 端，連接到 h1（IP 為 10.0.0.1）：`iperf -c 10.0.0.1`
 5. 經過 10 秒後，在 h2 自動生成了文件 result，儲存此次連接的訊息，在 h2 終端中查看 result 內容：`cat result`
     <img src="Week 6\result.PNG" width="700px" />
-6. 
+6. 將 result 中我們感興趣的訊息提取到新的文件 new_result 中：`cat result | grep sec | head -10 | tr - " " | awk '{print $4,$8}' > new_result`
+7. 查看 new_result 內容：`cat new_result`
+    <img src="Week 6\new_result.PNG" width="700px" />
+8. 接下來使用 gnuplot 畫圖（如果尚未安裝 gnuplot，可以使用以下指令安裝：`sudo apt-get install gnuplot-x11`）
+9. 在 xterm h2 進入 gnuplot：`gnuplot`
+10. 在 gnuplot 命令行中，將剛才得到的文件 new_result 畫圖：`plot "new_result" title "tcp flow" with linespoints`
+    <img src="Week 6\tcp_flow.PNG" width="700px" />
+11. 將縱座標範圍改爲40-60，添加橫縱座標標籤，並重新作圖
+    ```python
+    set yrang [40:60]
+    set xlabel "time (sec)"
+    set ylabel "tcp throughput (Mbps)"
+    replot
+    ```
 
 ## 延伸學習
 1. [网络性能测试工具 Iperf 介绍](https://www.sdnlab.com/2961.html)
